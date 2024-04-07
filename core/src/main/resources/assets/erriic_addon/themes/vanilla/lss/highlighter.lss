@@ -1,0 +1,34 @@
+.input-container {
+  width: 90%;
+  max-width: 200;
+  height: 80;
+  alignment-x: center;
+  alignment-y: center;
+
+  background-color: rgba(20, 20, 20, 150);
+  padding: 15;
+
+  .input-list {
+    space-between-entries: 4;
+    left: 0;
+    top: 10;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .title {
+    left: 50%;
+    top: 0;
+    alignment-x: center;
+    padding-top: -5;
+  }
+}
+.horizontal-list {
+  width: 100%;
+  height: 20;
+  left: 50%;
+  alignment-x: center;
+  bottom: 0;
+  layout: fill;
+  space-between-entries: 4;
+}

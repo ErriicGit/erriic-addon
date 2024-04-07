@@ -1,0 +1,96 @@
+{
+  "erriic_addon": {
+    "settings": {
+      "name": "Erriic's Settings",
+      "enabled": {
+        "name": "Enabled"
+      },
+      "highlightConfig": {
+        "name": "Player Highlight",
+        "enabled": {
+          "name": "Rendering"
+        },
+        "sharekey": {
+          "name": "Share-Key",
+          "description": "You can get this key from the owner of the data server."
+        },
+        "addplayerhotkey": {
+          "name": "Highlight GUI",
+          "description": "Opens a GUI for editing the List"
+        },
+        "updateinterval": {
+          "name": "Update-Interval",
+          "description": "The time in seconds to wait for the next List-Update"
+        },
+        "server": {
+          "name": "Server",
+          "description": "A data server of your choice. To create one checkout my Github."
+        },
+        "esp": {
+          "name": "ESP",
+          "description": "See highlighted players through walls."
+        },
+        "allyclansettings": {
+          "name": "Highlight Ally Clans",
+          "highlight": {
+            "name": "Highlight"
+          },
+          "outline": {
+            "name": "Outline Color"
+          },
+          "fill": {
+            "name": "Fill Color"
+          },
+          "tab": {
+            "name": "Tablist Color"
+          }
+        },
+        "enemyclansettings": {
+          "name": "Highlight Enemy Clans",
+          "highlight": {
+            "name": "Highlight"
+          },
+          "outline": {
+            "name": "Outline Color"
+          },
+          "fill": {
+            "name": "Fill Color"
+          },
+          "tab": {
+            "name": "Tablist Color"
+          }
+        },
+        "allyplayersettings": {
+          "name": "Highlight Ally Players",
+          "highlight": {
+            "name": "Highlight"
+          },
+          "outline": {
+            "name": "Outline Color"
+          },
+          "fill": {
+            "name": "Fill Color"
+          },
+          "tab": {
+            "name": "Tablist Color"
+          }
+        },
+        "enemyplayersettings": {
+          "name": "Highlight Enemy Players",
+          "highlight": {
+            "name": "Highlight"
+          },
+          "outline": {
+            "name": "Outline Color"
+          },
+          "fill": {
+            "name": "Fill Color"
+          },
+          "tab": {
+            "name": "Tablist Color"
+          }
+        }
+      }
+    }
+  }
+}
