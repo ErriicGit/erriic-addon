@@ -2,18 +2,14 @@ package me.erriic.ffaaddon.listener;
 
 import me.erriic.ffaaddon.ErriicAddon;
 import me.erriic.ffaaddon.Highlighter;
-import me.erriic.ffaaddon.config.ErriicConfig;
 import me.erriic.ffaaddon.config.HighlightConig;
 import net.labymod.api.Laby;
 import net.labymod.api.client.Minecraft;
 import net.labymod.api.client.component.serializer.plain.PlainTextComponentSerializer;
 import net.labymod.api.client.entity.Entity;
 import net.labymod.api.client.entity.player.Player;
-import net.labymod.api.client.gui.icon.Icon;
 import net.labymod.api.client.options.Perspective;
 import net.labymod.api.client.render.matrix.Stack;
-import net.labymod.api.client.render.model.Model;
-import net.labymod.api.client.world.effect.PotionEffect;
 import net.labymod.api.event.Subscribe;
 import net.labymod.api.util.bounds.Rectangle;
 import net.labymod.api.util.math.vector.FloatVector3;
