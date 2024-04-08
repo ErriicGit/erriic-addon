@@ -36,9 +36,6 @@ public class RenderListener {
     }
     Laby.labyAPI().gfxRenderPipeline().gfx().disableCull();
     for(Player pl : minecraft.clientWorld().getPlayers()){
-      /*if(minecraft.getTargetEntity()!=null&&minecraft.getTargetEntity().equals(pl)){
-        renderHitbox(pl, event.stack(), pos, event.delta(), config.allyplayersettings().fill().get(), config.allyplayersettings().tab().get());
-      }*/
       if(pl!=player||minecraft.options().perspective()!=Perspective.FIRST_PERSON){
         if(config.allyplayersettings().highligt().get() && Highlighter.allyPlayers.contains(pl.getUniqueId().toString().replace("-", ""))){
           renderHitbox(pl, event.stack(), pos, event.delta(), config.allyplayersettings().fill().get(), config.allyplayersettings().outline().get());
@@ -47,9 +44,9 @@ public class RenderListener {
           renderHitbox(pl, event.stack(), pos, event.delta(), config.enemyplayersettings().fill().get(), config.enemyplayersettings().outline().get());
         }
         else if(pl.getNetworkPlayerInfo() !=null){
-          String[] name = PlainTextComponentSerializer.plainText().serialize(pl.networkPlayerInfo().displayName()).split(" ");
+          String[] name = PlainTextComponentSerializer.plainText().serialize(pl.networkPlayerInfo().displayName()).split("\\[");
           if(name.length==2){
-            String tag = name[1].replaceFirst("\\[", "").replaceFirst("]", "");
+            String tag = name[1].replaceFirst("]", "");
             if(config.allyclansettings().highligt().get() && Highlighter.allyClans.contains(tag)){
               renderHitbox(pl, event.stack(), pos, event.delta(), config.allyclansettings().fill().get(), config.allyclansettings().outline().get());
             }
